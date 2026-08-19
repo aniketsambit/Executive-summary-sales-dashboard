@@ -1,37 +1,53 @@
-# 📊 Executive Summary & Sales Analytics Dashboard
+# 📊 Executive Summary & Retail Sales Dashboard
 
-An interactive, multi-dataset **Power BI** project analyzing sales performance, customer demographics, store operations, and product profitability across retail channels.
+A comprehensive **Power BI** end-to-end data analytics project designed to evaluate global retail performance, customer purchasing behavior, store-level operational metrics, and product category profitability.
 
 ---
 
-## 📌 Executive Summary
+## 📌 Project Overview & Objective
 
-This repository integrates customer, store, product, and sales data into an interactive intelligence dashboard. Designed for data-driven business decisions, it tracks total revenue, customer acquisition trends, regional store metrics, and top-performing product categories.
+Retail executives often struggle to combine fragmented operational data into actionable business strategies. The primary goal of this project is to consolidate disparate transactional datasets—spanning customer profiles, store locations, product lines, and overall sales records—into a central, interactive **Power BI Dashboard**.
+
+### Key Business Questions Addressed:
+* **Sales Trends:** What are the total revenue, total profit margins, and sales volume trends across time?
+* **Customer Demographics:** Who are the high-value customers, and how do purchasing behaviors vary across geographic regions?
+* **Store Performance:** Which physical or digital store locations drive the highest profitability and sales efficiency?
+* **Product Analytics:** What are the top-selling items, highest profit margin categories, and underperforming inventory lines?
+
+---
+
+## 🛠️ Tools, Technologies & Methodologies
+
+* **Business Intelligence:** Power BI Desktop (Data Transformation, Interactive Visualizations, Executive KPIs)
+* **Data Transformation & Preparation:** Power Query (Data cleaning, handling missing values, type casting)
+* **Data Analytics & Calculations:** DAX (Data Analysis Expressions for custom KPIs, measures, and calculated columns)
+* **Data Sources:** Microsoft Excel (`.xlsx` formatted datasets)
+* **Data Modeling:** Star Schema (Central Fact Sales table connected via 1-to-Many relationships to Dimension tables: Customers, Products, Stores)
 
 ---
 
 ## 🔑 Key Features & Insights
 
-* **Executive Sales Tracking:** Visualizes total revenue, profit margins, order volumes, and key time-series trends.
-* **Customer Demographics:** Segments purchasing behavior, lifetime value, and regional distributions.
-* **Store Performance:** Evaluates individual store profitability, geographic reach, and channel efficiency.
-* **Product Insights:** Highlights top-selling items, margin percentages, and product category breakdowns.
+* **Executive Dashboard:** High-level overview of revenue metrics, order fulfillment rates, and gross profit margins.
+* **Customer Segment Analysis:** Geographical breakdown and purchasing frequency analysis across customer tiers.
+* **Store Operational Metrics:** Side-by-side performance comparison across regional store locations and channel types.
+* **Product Profitability Matrix:** Categorical breakdown identifying high-volume vs. high-margin products to optimize inventory stocking.
 
 ---
 
 ## 📊 Dashboard Preview
 
-![Sales Performance Dashboard](Dashboard.png)
+![Sales Performance Dashboard](./Dashboard.png)
 
 ---
 
 ## 📁 Repository Structure
 
 ```text
-├── README.md                           # Project documentation
-├── Executive Summary Dashboard.pbix    # Power BI interactive report source file
 ├── Customers.xlsx                      # Customer profiles, demographics, and regional data
-├── Products.xlsx                       # Product catalog, categories, and unit costs
-├── Sales.xlsx                          # Order transactions, quantities, and dates
-├── Stores.xlsx                         # Store locations, metadata, and operational details
-└── Dashboard.png                       # Dashboard preview image for README display
+├── Dashboard.png                       # High-resolution dashboard screenshot for preview
+├── Executive Summary Dashboard.pbix    # Interactive Power BI report file
+├── Products.xlsx                       # Product catalog, categories, and unit pricing
+├── README.md                           # Documentation and project overview
+├── Sales.xlsx                          # Order transactions, sales volume, and order dates
+└── Stores.xlsx                         # Store locations, channel metadata, and region details
